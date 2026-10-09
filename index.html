@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akash M — Frontend Developer</title>
+<meta name="description" content="Portfolio of Akash M, Frontend Developer (React, JavaScript) from Chennai.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  // set theme before paint (no flash)
+  (function(){var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);})();
+
+  // image fallback: local image -> live-site screenshot -> hide (gradient/illustration shows)
+  function imgFail(i){
+    var f=i.dataset.fallback;
+    if(f){i.removeAttribute('data-fallback');i.src=f}
+    else{i.style.display='none'}
+  }
+</script>
+</head>
+<body>
+
+<div id="bar"></div>
+<div id="cur"></div>
+<div class="blob b1"></div><div class="blob b2"></div>
+
+<nav class="nav">
+  <a class="logo" href="#top">AKASH<b></b></a>
+  <div class="links" id="links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button id="theme" class="icon-btn" aria-label="Toggle theme">◐</button>
+    <button id="menu" class="icon-btn menu-btn" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="hero-grid">
+
+      <div class="hero-text">
+        <div class="eyebrow rv"><i></i>Open to frontend roles · Chennai</div>
+        <h1>
+          <span class="line"><span>Akash M</span></span>
+          <span class="line"><span class="grad">builds for</span></span>
+          <span class="line"><span>the web.</span></span>
+        </h1>
+        <div class="role-wrap rv"><span class="role-pre">I'm a</span><span class="role-box"><span id="role">Frontend Developer</span></span></div>
+        <p class="sub rv">I build fast, responsive and polished user interfaces with React, JavaScript and CSS. I also know Django and PostgreSQL, so I understand the full picture.</p>
+        <div class="rv">
+          <a class="btn p mag" href="#work">See my work</a>
+          <a class="btn s mag" href="#contact">Let's talk</a>
+        </div>
+      </div>
+
+      <!-- PHOTO: hidden, only revealed around the mouse -->
+      <div class="photo rv" id="photo" aria-label="Photo of Akash M">
+        <img src="./WhatsApp Image.jpeg" alt="Akash M" onerror="this.style.display='none'">
+        <span class="glow"></span>
+        <span class="hint" id="hint">Move your cursor here</span>
+      </div>
+
+    </div>
+    <a class="scroll-hint rv" href="#about">Scroll ↓</a>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee"><div class="track">
+    <span>React.js</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Git</span><span>Python</span><span>Django</span><span>PostgreSQL</span>
+    <span>React.js</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Git</span><span>Python</span><span>Django</span><span>PostgreSQL</span>
+  </div></div>
+
+  <!-- ABOUT -->
+  <section id="about"><div class="wrap about">
+    <div class="tag rv">About</div>
+    <p class="rv">I'm a chemistry graduate turned <em>frontend developer</em>. I care about clean <em>UI</em>, smooth interactions and responsive layouts, and I build them with <em>React</em> and modern JavaScript.</p>
+    <div class="stats">
+      <div class="stat rv"><b data-n="4">0</b><span>Projects built</span></div>
+      <div class="stat rv"><b data-n="11">0</b><span>Technologies</span></div>
+      <div class="stat rv"><b data-n="3">0</b><span>Live demos online</span></div>
+    </div>
+  </div></section>
+
+  <!-- PROJECTS -->
+  <section id="work"><div class="wrap">
+    <div class="tag rv">Selected work</div>
+    <h2 class="rv">Projects</h2>
+
+    <article class="proj">
+      <div class="n">01</div>
+      <div class="info">
+        <h3>React E-commerce</h3>
+        <p>Single-page shopping app with routing and global state management, built on Vite.</p>
+        <div class="chips"><span>React</span><span>Vite</span><span>Context API</span><span>React Router</span></div>
+        <a class="l" href="https://akash26022006.github.io/react-ecommerce-project/" target="_blank" rel="noopener">Live demo ↗</a>
+      </div>
+      <div class="thumb" style="--g:linear-gradient(135deg,#2b2b31,#6b6b75)">
+        <span>RE</span>
+        <img src="images/react-ecommerce.png"
+             data-fallback="https://s0.wp.com/mshots/v1/https%3A%2F%2Fakash26022006.github.io%2Freact-ecommerce-project%2F?w=800&h=500"
+             onerror="imgFail(this)" alt="React E-commerce screenshot" loading="lazy">
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="n">02</div>
+      <div class="info">
+        <h3>Foodie</h3>
+        <p>Food ordering experience written in pure JavaScript, no frameworks.</p>
+        <div class="chips"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+        <a class="l" href="https://akash26022006.github.io/foodie/" target="_blank" rel="noopener">Live demo ↗</a>
+      </div>
+      <div class="thumb" style="--g:linear-gradient(135deg,#1c1c20,#4a4a52)">
+        <span>FD</span>
+        <img src="images/foodie.png"
+             data-fallback="https://s0.wp.com/mshots/v1/https%3A%2F%2Fakash26022006.github.io%2Ffoodie%2F?w=800&h=500"
+             onerror="imgFail(this)" alt="Foodie screenshot" loading="lazy">
+      </div>
+    </article>
+
+    <!-- <article class="proj">
+      <div class="n">03</div>
+      <div class="info">
+        <h3>Flipkart Clone</h3>
+        <p>Responsive recreation of the Flipkart storefront UI.</p>
+        <div class="chips"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+        <a class="l" href="https://akash26022006.github.io/flipkart-clone/" target="_blank" rel="noopener">Live demo ↗</a>
+      </div>
+      <div class="thumb" style="--g:linear-gradient(135deg,#3a3a42,#8a8a94)">
+        <span>FK</span>
+        <img src="images/flipkart.png"
+             data-fallback="https://s0.wp.com/mshots/v1/https%3A%2F%2Fakash26022006.github.io%2Fflipkart-clone%2F?w=800&h=500"
+             onerror="imgFail(this)" alt="Flipkart Clone screenshot" loading="lazy">
+      </div>
+    </article> -->
+
+     <article class="proj">
+      <div class="n">04</div>
+      <div class="info">
+        <h3>BankX – Banking Dashboard</h3>
+        <p>Responsive Banking Dashboard Built With Bootstrap</p>
+        <div class="chips"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+        <a class="l" href="https://akash26022006.github.io/bootstrap/" target="_blank" rel="noopener">Live demo ↗</a>
+      </div>
+      <div class="thumb" style="--g:linear-gradient(135deg,#3a3a42,#8a8a94)">
+        <span>FK</span>
+        <img src="./BankX Smart Banking Dashboard.png"
+             data-fallback="https://s0.wp.com/mshots/v1/https%3A%2F%2Fakash26022006.github.io%2Fflipkart-clone%2F?w=800&h=500"
+             onerror="imgFail(this)" alt="Flipkart Clone screenshot" loading="lazy">
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="n">05</div>
+      <div class="info">
+        <h3>ShopKart</h3>
+        <p>Full-stack e-commerce app with product catalogue, cart and database-backed orders. Shows I can work across the whole stack.</p>
+        <div class="chips"><span>Django</span><span>PostgreSQL</span><span>Bootstrap</span></div>
+        <!-- Add your link: <a class="l" href="YOUR-LINK" target="_blank" rel="noopener">Live demo ↗</a> -->
+       </div> 
+      <div class="thumb" style="--g:linear-gradient(135deg,#18181b,#52525b)"> 
+        <!-- e-commerce illustration (shopping cart + product page) -->
+         <svg viewBox="0 0 240 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="30" y="20" width="180" height="126" rx="12" fill="rgba(255,255,255,.18)"/>
+          <rect x="42" y="32" width="70" height="56" rx="8" fill="rgba(255,255,255,.35)"/>
+          <rect x="124" y="34" width="74" height="10" rx="5" fill="rgba(255,255,255,.6)"/>
+          <rect x="124" y="52" width="54" height="8" rx="4" fill="rgba(255,255,255,.35)"/>
+          <rect x="124" y="72" width="46" height="16" rx="8" fill="#fff"/>
+          <path d="M46 104h14l9 26h58l9-32H64" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="76" cy="140" r="5" fill="#fff"/>
+          <circle cx="122" cy="140" r="5" fill="#fff"/>
+        </svg> 
+        <!-- optional: put your own screenshot at images/shopkart.png and it shows on top -->
+        <img src="./ShopKart Modern E-Commerce Showcase.png" onerror="imgFail(this)" alt="ShopKart screenshot" loading="lazy">
+      </div>
+    </article>
+  </div></section>
+
+  <!-- SKILLS -->
+  <section id="skills"><div class="wrap">
+    <div class="tag rv">Toolbox</div>
+    <h2 class="rv">Skills</h2>
+    <div class="skills">
+      <span class="sk">React.js</span><span class="sk">JavaScript</span><span class="sk">HTML5</span><span class="sk">CSS3</span><span class="sk">Bootstrap</span><span class="sk">React Router</span><span class="sk">Context API</span><span class="sk">Git / GitHub</span>
+      <span class="sk" style="opacity:.7">+ Backend:</span>
+      <span class="sk">Python</span><span class="sk">Django</span><span class="sk">PostgreSQL</span>
+    </div>
+
+    <div class="tag rv" style="margin-top:80px">Background</div>
+    <h2 class="rv">Education</h2>
+    <div class="edu">
+      <div class="rv"><b>Python Full Stack Development</b><span>Code99 IT Academy · Certification</span></div>
+      <div class="rv"><b>B.Sc. Chemistry</b><span>A.M. Jain College, University of Madras · 2022–2025</span></div>
+      <div class="rv"><b>MBA, HR Management</b><span>University of Madras · Distance, pursuing</span></div>
+    </div>
+  </div></section>
+
+  <!-- CONTACT -->
+  <section id="contact"><div class="wrap contact">
+    <div class="tag rv">Contact</div>
+    <h2 class="rv">Let's build<br><span class="grad">something.</span></h2>
+    <form id="form" class="form rv">
+      <input id="fname" type="text" placeholder="Your name" required>
+      <textarea id="fmsg" rows="4" placeholder="Your message" required></textarea>
+      <button class="btn p mag" type="submit">Send message</button>
+    </form>
+    <div class="rv">
+      <a class="btn s mag" href="https://github.com/akash26022006" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn s mag" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div></section>
+</main>
+
+<footer>© 2026 Akash M · Chennai, India</footer>
+<a id="top-btn" href="#top" aria-label="Back to top">↑</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
